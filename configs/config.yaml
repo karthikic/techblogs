@@ -1,0 +1,21 @@
+scrape_interval: 60
+sources:
+  golangcode:
+    title_key: ".post-title"
+    image_key: ""
+    url: "https://golangcode.com/"
+    page_path: "page/"
+    
+  qubole:
+    title_key: ".blog-info"
+    image_key: ".featured-image lazyloaded"
+    url: "https://golangcode.com/"
+    page_path: "page/"
+    scrape_interval: 30
+
+  shopify:
+    title_key: ".blog-info"
+    image_key: ".featured-image lazyloaded"
+    url: "https://golangcode.com/"
+    page_path: "?page="
+  
