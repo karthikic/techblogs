@@ -1,3 +1,8 @@
+databases: 
+  host: "127.0.0.0"
+  user: "root"
+  database: "techblogs"
+  password: ""
 scrape_interval: 60
 sources:
   golangcode:

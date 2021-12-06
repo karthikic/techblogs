@@ -1,0 +1,14 @@
+databases_configs: 
+  host: "localhost"
+  port: "3306"
+  user: "root"
+  database: "techblogs"
+  password: ""
+scrape_interval: 10
+test_mode: true
+sources:
+  qubole:
+    title_key: ".blog-info"
+    image_key: ".featured-image lazyloaded"
+    url: "https://www.qubole.com/tech-blog/"
+    page_path: "page/"

@@ -47,12 +47,13 @@ func init() {
 }
 
 func entryPoint(args []string) {
+	db := core.SetupDB()
 	stop := make(chan bool)
 
 	go cleanUp(stop)
 
 	fmt.Println("Starting the scheduler")
-	core.NewScheduler(stop)
+	core.NewScheduler(db, stop)
 }
 
 func cleanUp(stop chan bool) {
